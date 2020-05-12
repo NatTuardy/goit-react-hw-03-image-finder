@@ -1,5 +1,6 @@
 import React, { Component, createRef } from 'react';
 import styles from './Modal.module.css';
+import PropTypes from 'prop-types';
 
 class Modal extends Component {
   state = {};
@@ -39,3 +40,8 @@ class Modal extends Component {
 }
 
 export default Modal;
+
+Modal.propTypes = {
+  nowImage: PropTypes.string,
+  onClose: PropTypes.func,
+};
